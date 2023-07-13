@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="demo.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  </head>
+
+  <!-- keypress
+  <style>
+    p {
+      padding: 10px;
+      background: lightgreen;
+      display: none;
+    }
+    div {
+      margin: 20px 0;
+    }
+  </style> -->
+
+  <!-- keydown -->
+  <!-- <style>
+    p {
+      padding: 10px;
+      background: lightgreen;
+      display: none;
+    }
+    div {
+      margin: 20px 0;
+    }
+  </style> -->
+
+  <!-- keyup -->
+  <!-- <style>
+    p {
+      padding: 10px;
+      background: lightgreen;
+      display: none;
+    }
+    div {
+      margin: 20px 0;
+    }
+  </style> -->
+
+  <!-- focus -->
+  <!-- <style>
+    label {
+      display: block;
+      margin: 5px 0;
+    }
+    label span {
+      display: none;
+    }
+  </style> -->
+
+  <!-- blur -->
+  <!-- <style>
+    label {
+      display: block;
+      margin: 5px 0;
+    }
+    label span {
+      display: none;
+    }
+  </style> -->
+
+  <!-- submit -->
+  <!-- <style>
+    .error {
+      color: red;
+    }
+  </style> -->
+
+  <!-- resize -->
+  <!-- <style>
+    p {
+      padding: 20px;
+      font: 20px sans-serif;
+      background: #f0e68c;
+    }
+  </style> -->
+
+  <!-- scroll -->
+  <!-- <style>
+    p {
+      width: 100%;
+      padding: 50px 0;
+      text-align: center;
+      font: bold 34px sans-serif;
+      background: #f0e68c;
+      position: fixed;
+      top: 50px;
+      display: none;
+    }
+    .dummy-content {
+      height: 600px;
+      font: 34px sans-serif;
+      text-align: center;
+    }
+  </style> -->
+
+  <!-- removeattr -->
+  <!-- <style>
+    a {
+      font-size: 18px;
+      margin-right: 20px;
+    }
+  </style> -->
+
+  <!-- odd filter -->
+  <!-- <style>
+    .highlight {
+      background: yellow;
+    }
+  </style> -->
+
+  <!-- has -->
+  <!-- <style>
+    .highlight {
+      background: yellow;
+    }
+  </style> -->
+
+  <body>
+    <h2 class="text-center">FORM</h2>
+    <div class="container">
+      <table class="table table-bordered">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">NAME</th>
+            <th scope="col">USERNAME</th>
+            <th scope="col">PASSWORD</th>
+            <th scope="col">PHONE</th>
+            <th scope="col">LAT & LONG</th>
+            <th scope="col">CITY</th>
+            <th scope="col">STREET</th>
+            <th scope="col">NUMBER</th>
+            <th scope="col">PINCODE</th>
+          </tr>
+        </thead>
+        <tbody id="table_body"></tbody>
+      </table>
+    </div>
+
+    <!-- keypress
+    <input type="text" />
+    <div>Keypress: <span>0</span></div>
+    <div>
+      <strong>Note:</strong> Enter something inside the input box and see the
+      result.
+    </div>
+    <p>Keypress is triggered.</p> -->
+
+    <!-- keydown -->
+    <!-- <input type="text" />
+    <div>Keydown: <span>0</span></div>
+    <div>
+      <strong>Note:</strong> Enter something inside the input box and see the
+      result.
+    </div>
+    <p>Keydown is triggered.</p> -->
+
+    <!-- keyup -->
+    <!-- <input type="text" />
+    <div>Keyup: <span>0</span></div>
+    <div>
+      <strong>Note:</strong> Enter something inside the input box and see the
+      result.
+    </div>
+    <p>Keyup is triggered.</p> -->
+
+    <!-- change -->
+    <!-- <form>
+      <label>City:</label>
+      <select>
+        <option>London</option>
+        <option>Paris</option>
+        <option>New York</option>
+      </select>
+    </form>
+    <p>
+      <strong>Note:</strong> Select any value from the dropdown select and see
+      the result.
+    </p> -->
+
+    <!-- focus -->
+    <!-- <form>
+      <label>Email: <input type="text" /> <span>focus fire</span></label>
+      <label>Password: <input type="password" /> <span>focus fire</span></label>
+      <label
+        ><input type="submit" value="Sign In" /> <span>focus fire</span></label
+      >
+    </form>
+    <p>
+      <strong>Note:</strong> Click on the form control or press the "Tab" key to
+      set focus.
+    </p> -->
+
+    <!-- blur -->
+    <!-- <form>
+      <label>Email: <input type="text" /> <span>blur fire</span></label>
+      <label>Password: <input type="password" /> <span>blur fire</span></label>
+      <label
+        ><input type="submit" value="Sign In" /> <span>blur fire</span></label
+      >
+    </form>
+    <p>
+      <strong>Note:</strong> Click away from the form control or press the "Tab"
+      key to remove focus.
+    </p> -->
+
+    <!-- submit -->
+    <!-- <p>
+      <strong>Note:</strong> If try to submit any invalid value. It will produce
+      an error.
+    </p>
+    <form action="/examples/html/action.php" method="post" id="users">
+      <label for="firstName">First Name:</label>
+      <input type="text" name="first-name" id="firstName" />
+      <input type="submit" value="Submit" />
+      <div id="result"></div>
+    </form> -->
+
+    <!-- resize -->
+    <!-- <p>
+      Open the output in a new tab and resize the browser window by dragging the
+      corners.
+    </p> -->
+
+    <!-- scroll -->
+    <!-- <p>Scroll Happened!</p>
+    <div class="dummy-content">Scroll the viewport.</div>
+    <div class="dummy-content">Scroll the viewport.</div>
+    <div class="dummy-content">Scroll the viewport.</div>
+    <div class="dummy-content">Scroll the viewport.</div>
+    <div class="dummy-content">Scroll the viewport.</div> -->
+
+    <!-- attr -->
+    <!-- <p>
+      <label><input type="checkbox" /></label> I agree with terms and
+      conditions.
+    </p>
+    <button type="button">Check</button> -->
+
+    <!-- val -->
+    <!-- <form>
+      <table>
+        <tr>
+          <td>Name:</td>
+          <td>
+            <input type="text" id="name" />
+          </td>
+        </tr>
+        <tr>
+          <td>Comments:</td>
+          <td>
+            <textarea rows="4" cols="30" id="comment"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>City:</td>
+          <td>
+            <select id="city">
+              <option>London</option>
+              <option>Paris</option>
+              <option>New York</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+    </form>
+    <p>
+      <strong>Note:</strong> Fill the above form and click the following button
+      to get the value.
+    </p>
+    <button type="button" class="get-name">Get Name</button>
+    <button type="button" class="get-comment">Get Comment</button>
+    <button type="button" class="get-city">Get City</button> -->
+
+    <!-- val set -->
+    <!-- <button type="button">Discovery</button>
+    <button type="button">Atlantis</button>
+    <button type="button">Endeavour</button>
+    <p>
+      <strong>Note:</strong> Click the above buttons to set the value of
+      following input box.
+    </p>
+    <p>
+      <input type="text" />
+    </p> -->
+
+    <!-- removeattr -->
+    <!-- <div class="container">
+      <p>
+        <a href="https://www.tutorialrepublic.com/">Home</a>
+        <a href="https://www.tutorialrepublic.com/about-us.php">About</a>
+        <a href="https://www.tutorialrepublic.com/contact-us.php">Contact</a>
+      </p>
+      <button type="button">Remove Attribute</button>
+    </div> -->
+
+    <!-- odd filter -->
+    <!-- <h2>Unordered List</h2>
+    <ul>
+      <li>First list item</li>
+      <li>Second list item</li>
+      <li>Third list item</li>
+      <li>Fourth list item</li>
+    </ul>
+    <hr />
+    <h2>Another Unordered List</h2>
+    <ul>
+      <li>First list item</li>
+      <li>Second list item</li>
+      <li>Third list item</li>
+      <li>Fourth list item</li>
+    </ul> -->
+
+    <!-- has -->
+    <!-- <ul>
+      <li>Section 1</li>
+      <li>Section 2</li>
+      <li>
+        <ul>
+          <li>Section 2.1</li>
+          <li>Section 2.2</li>
+          <li>Section 2.3</li>
+        </ul>
+      </li>
+      <li>Section 4</li>
+    </ul> -->
+
+    <!-- keypress
+    <script>
+      $(document).ready(function () {
+        var i = 0;
+        $('input[type="text"]').keypress(function () {
+          $("span").text((i += 1));
+          $("p").show().fadeOut();
+        });
+      });
+    </script> -->
+
+    <!-- keydown -->
+    <!-- <script>
+      $(document).ready(function () {
+        var i = 0;
+        $('input[type="text"]').keydown(function () {
+          $("span").text((i += 1));
+          $("p").show().fadeOut();
+        });
+      });
+    </script> -->
+
+    <!-- keyup -->
+    <!-- <script>
+      $(document).ready(function () {
+        var i = 0;
+        $('input[type="text"]').keyup(function () {
+          $("span").text((i += 1));
+          $("p").show().fadeOut();
+        });
+      });
+    </script> -->
+
+    <!-- change -->
+    <!-- <script>
+      $(document).ready(function () {
+        $("select").change(function () {
+          var selectedOption = $(this).find(":selected").val();
+          alert("You have selected - " + selectedOption);
+        });
+      });
+    </script> -->
+
+    <!-- focus -->
+    <!-- <script>
+      $(document).ready(function () {
+        $("input").focus(function () {
+          $(this).next("span").show().fadeOut("slow");
+        });
+      });
+    </script> -->
+
+    <!-- blur -->
+    <!-- <script>
+      $(document).ready(function () {
+        $("input").blur(function () {
+          $(this).next("span").show().fadeOut("slow");
+        });
+      });
+    </script> -->
+
+    <!-- submit -->
+    <!-- <script>
+      $(document).ready(function () {
+        $("form").submit(function (event) {
+          var regex = /^[a-zA-Z]+$/;
+          var currentValue = $("#firstName").val();
+          if (regex.test(currentValue) == false) {
+            $("#result")
+              .html('<p class="error">Not valid!</p>')
+              .show()
+              .fadeOut(1000);
+            // Preventing form submission
+            event.preventDefault();
+          }
+        });
+      });
+    </script> -->
+
+    <!-- resize -->
+    <!-- <script>
+      $(document).ready(function () {
+        $(window).resize(function () {
+          $(window).bind("resize", function () {
+            $("p").text(
+              "Window width: " +
+                $(window).width() +
+                ", " +
+                "Window height: " +
+                $(window).height()
+            );
+          });
+        });
+      });
+    </script> -->
+
+    <!-- scroll -->
+    <!-- <script>
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          $("p").show().fadeOut("slow");
+        });
+      });
+    </script> -->
+
+    <!-- attr -->
+    <!-- <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $('input[type="checkbox"]').attr("checked", "checked");
+        });
+      });
+    </script> -->
+
+    <!-- val -->
+    <!-- <script>
+      $(document).ready(function () {
+        $("button.get-name").click(function () {
+          var name = $("#name").val();
+          alert(name);
+        });
+        $("button.get-comment").click(function () {
+          var comment = $("#comment").val();
+          alert(comment);
+        });
+        $("button.get-city").click(function () {
+          var city = $("#city").val();
+          alert(city);
+        });
+      });
+    </script> -->
+
+    <!-- val set -->
+    <!-- <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          var text = $(this).text();
+          $('input[type="text"]').val(text);
+        });
+      });
+    </script> -->
+
+    <!-- removeattr -->
+    <!-- <script>
+      $(document).ready(function () {
+        // Removes the hyperlink's href attribute on button click
+        $("button").click(function () {
+          $("a").removeAttr("href");
+        });
+      });
+    </script> -->
+
+    <!-- odd filter -->
+    <!-- <script>
+      $(document).ready(function () {
+        $("ul li")
+          .filter(function (index) {
+            return index % 2 !== 0;
+          })
+          .addClass("highlight");
+      });
+    </script> -->
+    <!-- even filter -->
+    <!-- <script>
+      $(document).ready(function(){
+          $("ul li").not(function(index){
+              return index % 2 !== 0;
+          }).addClass("highlight");
+      });
+      </script> -->
+
+    <!-- has -->
+    <!-- <script>
+      $(document).ready(function () {
+        $("ul li").has("ul").addClass("highlight");
+      });
+    </script> -->
+
+    <script src="demo.js"></script>
+  </body>
+</html>
