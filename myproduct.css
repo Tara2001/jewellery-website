@@ -1,0 +1,114 @@
+#contain {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.img {
+    display: inline-block;
+    padding: 1% 3%;
+    transition: 0.1s ease;
+    margin: 1% 6%;
+    margin-bottom: 10%;
+    overflow: hidden;
+    width: calc(100% - 80%);
+    height: 100%;
+}
+
+.img:hover {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px #a3a0a0;
+    border-radius: 20px;
+}
+
+#img {
+    width: 100%;
+}
+
+#space {
+    margin-top: 5%;
+    font-weight: bold;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+#p {
+    font-size: 18px;
+}
+
+#s {
+    margin: 0;
+    padding: 1%;
+    height: 100%;
+    font-size: 30px;
+    color: rgb(0 0 0 / 30%);
+}
+
+#i {
+    width: calc(100% - 55%);
+    color: rgb(0 0 0 / 30%);
+    display: inline-grid;
+    position: relative;
+    top: 20px;
+    right: 0;
+}
+
+#i .fa-heart {
+    font-size: 25px;
+}
+
+#i .fa-cart-plus {
+    font-size: 25px;
+}
+
+#i .fa-heart:hover {
+    color: red;
+    cursor: pointer;
+}
+
+#i .fa-cart-plus:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+#delete {
+        position: relative;
+        right: -13%;
+        font-size: 35px;
+        padding: 1%;
+        color: rgb(0 0 0 / 30%);
+}
+
+#delete:hover {
+    color: #42fd42;
+    cursor: pointer;
+}
+
+#btn {
+    position: relative;
+    top: -25px;
+    right: -40px;
+    font-size: 14px;
+    width: 70%;
+    color: black;
+    background: rgb(0 0 0 / 30%);
+    letter-spacing: 1px;
+}
+
+#btn:hover {
+    background: #fd405e;
+}
+
+.star {
+    color: #fd405e;
+}
+
+.cart {
+    width: 250px;
+    float: right;
+    text-align: center;
+    border: 1px solid blue;
+    height: 100vh;
+    overflow-y: scroll;
+}
+

@@ -1,0 +1,95 @@
+#contain {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.img {
+    padding: 1% 10%;
+    transition: 0.1s ease;
+    margin-bottom: 3%;
+    overflow: hidden;
+}
+
+.img:hover {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px #a3a0a0;
+    border-radius: 20px;
+}
+
+#img {
+    width: 16%;
+}
+
+#space {
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    left: 10%;
+    font-weight: bold;
+    font-size: 18px;
+    overflow: hidden;
+    width: calc(100% - 30%);
+}
+
+#p {
+    font-size: 18px;
+}
+
+#i {
+    width: calc(100% - 55%);
+    color: rgb(0 0 0 / 30%);
+    display: inline-grid;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+#i .fa-heart {
+    color: red;
+    font-size: 25px;
+}
+
+#i .fa-cart-plus {
+    font-size: 25px;
+}
+
+#i .fa-heart:hover {
+    cursor: pointer;
+}
+
+#i .fa-cart-plus:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+#delete {
+        position: relative;
+        right: -13%;
+        font-size: 35px;
+        padding: 1%;
+        color: rgb(0 0 0 / 30%);
+}
+
+#delete:hover {
+    color: #42fd42;
+    cursor: pointer;
+}
+
+#btn {
+    position: relative;
+    top: -25px;
+    right: -40px;
+    font-size: 14px;
+    width: 70%;
+    color: black;
+    background: rgb(0 0 0 / 30%);
+    letter-spacing: 1px;
+}
+
+#btn:hover {
+    background: #fd405e;
+}
+
+.star {
+    color: #fd405e;
+}
